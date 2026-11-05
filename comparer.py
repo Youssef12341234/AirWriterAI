@@ -96,4 +96,5 @@ for ax, (nom, modele) in zip(axes, modeles.items()):
             if matrice[v][p] > 0 and v != p:
                 ax.text(p, v, matrice[v][p], ha="center", va="center", color="red", fontsize=8)
 plt.tight_layout()
+plt.savefig("docs/matrices_avant_apres.png", dpi=150)    # enregistre l'image pour le README
 plt.show()
